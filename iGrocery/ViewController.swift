@@ -41,10 +41,25 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+//        let currentGroceryItem = groceryArray[indexPath.row]
+//        cell.textLabel!.text = currentGroceryItem.itemName
+//        cell.textLabel!.font = UIFont(name: "Helvetica-Bold", size: 36.0)
+//        cell.detailTextLabel!.text = currentGroceryItem.formattedQty
+//        cell.detailTextLabel!.font = UIFont(name: "Helvetica-Oblique", size: 8.0)
+//        cell.textLabel!.textColor = .green
+//        cell.imageView!.image = UIImage(named: currentGroceryItem.imgName)
+//        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GroceryCell", for: indexPath) as! GroceryTableViewCell
         let currentGroceryItem = groceryArray[indexPath.row]
-        cell.textLabel!.text = currentGroceryItem.itemName
+        cell.nameLabel.text = currentGroceryItem.itemName
+        cell.qtyLabel.text = currentGroceryItem.formattedQty
+        cell.itemImgView.image = UIImage(named: currentGroceryItem.imgName)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80.0
     }
 }
 

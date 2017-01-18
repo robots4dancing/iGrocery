@@ -12,7 +12,7 @@ class GroceryItem: NSObject {
     
     var itemName :String!
     var imgName  :String!
-    var qty      :Int! = 0
+    var qty      :Int = 0
     
     var formattedQty :String {
         return "Quantity: \(qty)"

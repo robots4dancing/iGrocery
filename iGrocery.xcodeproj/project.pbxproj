@@ -13,6 +13,7 @@
 		813582081E2EE57300D61371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813582071E2EE57300D61371 /* Assets.xcassets */; };
 		8135820B1E2EE57300D61371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813582091E2EE57300D61371 /* LaunchScreen.storyboard */; };
 		813582131E2EEC0300D61371 /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813582121E2EEC0300D61371 /* GroceryItem.swift */; };
+		813582151E2EF6F800D61371 /* GroceryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813582141E2EF6F800D61371 /* GroceryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8135820A1E2EE57300D61371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8135820C1E2EE57300D61371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		813582121E2EEC0300D61371 /* GroceryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
+		813582141E2EF6F800D61371 /* GroceryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				813582001E2EE57300D61371 /* AppDelegate.swift */,
 				813582021E2EE57300D61371 /* ViewController.swift */,
+				813582141E2EF6F800D61371 /* GroceryTableViewCell.swift */,
 				813582121E2EEC0300D61371 /* GroceryItem.swift */,
 				813582041E2EE57300D61371 /* Main.storyboard */,
 				813582071E2EE57300D61371 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 				813582031E2EE57300D61371 /* ViewController.swift in Sources */,
 				813582131E2EEC0300D61371 /* GroceryItem.swift in Sources */,
 				813582011E2EE57300D61371 /* AppDelegate.swift in Sources */,
+				813582151E2EF6F800D61371 /* GroceryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
