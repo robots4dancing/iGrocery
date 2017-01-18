@@ -82,6 +82,7 @@
                                             <outlet property="itemImgView" destination="Ykj-Et-Nod" id="0P6-Ql-Ohd"/>
                                             <outlet property="nameLabel" destination="Gcj-9u-aZb" id="WSo-MM-Jja"/>
                                             <outlet property="qtyLabel" destination="15V-6q-PU2" id="FJI-BG-jNu"/>
+                                            <segue destination="w9d-3K-tgT" kind="show" id="NEb-6C-Cl5"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -94,10 +95,44 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Grocery List" id="l2R-sf-tjM"/>
+                    <connections>
+                        <outlet property="groceryTableView" destination="hVy-Eu-HhA" id="Hu1-UM-tCb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="620" y="-559.07046476761627"/>
+        </scene>
+        <!--Grocery Item-->
+        <scene sceneID="bJA-fE-2wW">
+            <objects>
+                <viewController id="w9d-3K-tgT" customClass="DetailViewController" customModule="iGrocery" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O6O-eR-pyy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wfq-bR-Wvb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IY6-vp-z8a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4V9-HG-GHh">
+                                <rect key="frame" x="16" y="64" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Grocery Item" id="cye-LB-AOD"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="4V9-HG-GHh" id="5D9-M2-z1b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e0L-Vz-dhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336.8" y="-559.07046476761627"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KVA-jZ-OD7">

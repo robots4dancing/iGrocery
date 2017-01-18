@@ -12,6 +12,17 @@ class ViewController: UIViewController {
     
     var groceryArray = [GroceryItem]()
     
+    @IBOutlet var groceryTableView  :UITableView!
+    
+    //MARK: - Interactivity Methods
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! DetailViewController
+        let indexPath = groceryTableView.indexPathForSelectedRow!
+        let currentGroceryItem = groceryArray[indexPath.row]
+        destinationVC.currentGroceryItem = currentGroceryItem
+    }
+    
     //MARK: - Life Cycle Methods
 
     override func viewDidLoad() {
@@ -60,6 +71,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80.0
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let currentGroceryItem = groceryArray[indexPath.row]
+        print("Row \(indexPath.row) \(currentGroceryItem.itemName!)")
+        
     }
 }
 

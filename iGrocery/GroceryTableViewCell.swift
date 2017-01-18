@@ -12,6 +12,6 @@ class GroceryTableViewCell: UITableViewCell {
 
     @IBOutlet var nameLabel     :UILabel!
     @IBOutlet var qtyLabel      :UILabel!
-    @IBOutlet var itemImgView :UIImageView!
+    @IBOutlet var itemImgView   :UIImageView!
     
 }
